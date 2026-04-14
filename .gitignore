@@ -9,6 +9,7 @@ __pycache__/
 # Large recorded media — tracked via manifest.csv, not git
 data/raw/**/*.mov
 data/raw/**/*.mp4
+data/raw/**/*.m4v
 data/clips/**/*.mp4
 data/clips/**/*.npy
 *.log
