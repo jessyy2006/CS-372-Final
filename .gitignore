@@ -5,3 +5,12 @@ __pycache__/
 *.h5
 *.ckpt
 .DS_Store
+
+# Large recorded media — tracked via manifest.csv, not git
+data/raw/**/*.mov
+data/raw/**/*.mp4
+data/clips/**/*.mp4
+data/clips/**/*.npy
+*.log
+.ipynb_checkpoints/
+.pytest_cache/
