@@ -1,5 +1,25 @@
+# Core
 torch
 numpy
 pandas
 matplotlib
 scikit-learn
+
+# Vision / video
+opencv-python
+decord
+pillow
+
+# Models
+transformers
+ultralytics          # YOLOv8
+
+# Cube logic
+pycuber
+kociemba
+
+# UI
+streamlit
+
+# Dev
+pytest
