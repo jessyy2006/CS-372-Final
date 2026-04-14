@@ -81,18 +81,20 @@ Class balance: across 200 × 25 = 5,000 moves, each of 18 classes gets ~275 samp
 ### Step 2 — Recording protocol
 **Why rigid:** auto-labeling only works if recording conditions are consistent enough for motion segmentation to reliably detect move boundaries.
 
+**View:** high-angle bird's-eye, **camera tilted ~15° off vertical toward the solver**. U face dominates the frame; a sliver of the front face is visible. Deliberate compromise — keeps the consistent overhead framing that makes motion segmentation trivial while giving the classifier enough side-face signal to disambiguate F/B and L/R.
+
 Setup checklist per session:
-- Tripod at ~45° angle, ~40cm from cube.
-- Fixed white LED ring light; blinds closed (no sun drift).
-- Same physical 3×3 cube (matte stickers; we'll note brand in ATTRIBUTION.md).
-- Camera: iPhone at 60fps, 1080p, locked exposure + focus (tap-hold to lock).
-- Plain dark mat under cube for contrast.
-- Solver's hands start in frame, palms down, cube centered.
+- Phone mounted above the cube, tilted 15° off vertical toward the solver. Height ~30–35 cm above the cube. Measure the tilt once with a phone level and mark the rig position with tape for reproducibility.
+- Ambient room lighting, **fixed for the entire session** (no light switches, no blinds mid-recording). Position self so hand shadows fall off to the side of the cube, not onto it.
+- Same physical 3×3 cube (matte stickers preferred; we'll note brand in ATTRIBUTION.md).
+- Camera: iPhone at 60fps, 1080p, locked exposure + focus (tap-hold to lock — critical, since hands entering the frame otherwise trigger re-exposure).
+- Plain dark mat under cube; tape cross to mark the cube's resting position.
+- Solver's hands start out of frame, cube in neutral orientation (white up, green toward solver) on the cross.
 
 Per scramble:
-1. Record 2-second static **initial state pan** — solver slowly rotates cube to show all 6 faces (for Stage 4 scramble detection). Then sets cube down in neutral orientation.
-2. Record **"clap frame"** — solver snaps fingers once over the cube → bright motion spike = sync anchor for alignment.
-3. Execute the scramble moves at ~1 move/sec (slightly slower than normal speed — critical for clean segmentation). No rotations (x/y/z) allowed.
+1. **Initial state capture (~6 s)** — solver holds the cube ~15–20 cm below the lens and presents each face flat **to the lens** (not to the mat) for ~1 s each in order U, D, F, B, L, R. Full stillness per face — motion blur kills color classification. Then sets cube down on the cross.
+2. **Clap frame** — solver snaps fingers once over the cube → bright motion spike = sync anchor between state-capture and scramble execution.
+3. Execute the scramble moves at ~1 move/sec with a **deliberate 500 ms pause between every move**. No rotations (x/y/z) allowed. Keep cube on the cross; minimize translation between moves. Pinch-grip for side turns (no palm-cupping). Consistent hand-approach direction per face (R from right, L from left, F from near, B from far, U/D from above). Both hands always visible.
 4. Hold still 2 seconds at end → natural end marker.
 
 **File:** `src/data/recording_utils.py`
