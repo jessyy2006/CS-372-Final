@@ -1,0 +1,106 @@
+{
+  "video_path": "C:\\Users\\soham\\OneDrive\\Desktop\\CS-372-Final\\data\\raw\\soham\\scramble_0001\\video.mov",
+  "fps": 30.0,
+  "segments": [
+    {
+      "start_frame": 595,
+      "end_frame": 610
+    },
+    {
+      "start_frame": 637,
+      "end_frame": 648
+    },
+    {
+      "start_frame": 669,
+      "end_frame": 682
+    },
+    {
+      "start_frame": 699,
+      "end_frame": 713
+    },
+    {
+      "start_frame": 729,
+      "end_frame": 747
+    },
+    {
+      "start_frame": 765,
+      "end_frame": 783
+    },
+    {
+      "start_frame": 807,
+      "end_frame": 817
+    },
+    {
+      "start_frame": 835,
+      "end_frame": 849
+    },
+    {
+      "start_frame": 868,
+      "end_frame": 882
+    },
+    {
+      "start_frame": 899,
+      "end_frame": 915
+    },
+    {
+      "start_frame": 936,
+      "end_frame": 953
+    },
+    {
+      "start_frame": 969,
+      "end_frame": 981
+    },
+    {
+      "start_frame": 994,
+      "end_frame": 1017
+    },
+    {
+      "start_frame": 1035,
+      "end_frame": 1050
+    },
+    {
+      "start_frame": 1063,
+      "end_frame": 1081
+    },
+    {
+      "start_frame": 1096,
+      "end_frame": 1108
+    },
+    {
+      "start_frame": 1129,
+      "end_frame": 1139
+    },
+    {
+      "start_frame": 1161,
+      "end_frame": 1175
+    },
+    {
+      "start_frame": 1192,
+      "end_frame": 1208
+    },
+    {
+      "start_frame": 1227,
+      "end_frame": 1238
+    },
+    {
+      "start_frame": 1251,
+      "end_frame": 1271
+    },
+    {
+      "start_frame": 1290,
+      "end_frame": 1305
+    },
+    {
+      "start_frame": 1312,
+      "end_frame": 1336
+    },
+    {
+      "start_frame": 1349,
+      "end_frame": 1365
+    },
+    {
+      "start_frame": 1379,
+      "end_frame": 1395
+    }
+  ]
+}

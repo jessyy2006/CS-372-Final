@@ -1,0 +1,22 @@
+{
+  "video_path": "C:\\Users\\soham\\OneDrive\\Desktop\\CS-372-Final\\data\\raw\\soham\\scramble_0002\\video.mov",
+  "fps": 30.0,
+  "segments": [
+    {
+      "start_frame": 579,
+      "end_frame": 591
+    },
+    {
+      "start_frame": 625,
+      "end_frame": 634
+    },
+    {
+      "start_frame": 655,
+      "end_frame": 675
+    },
+    {
+      "start_frame": 704,
+      "end_frame": 716
+    }
+  ]
+}

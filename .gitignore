@@ -12,6 +12,10 @@ data/raw/**/*.mp4
 data/raw/**/*.m4v
 data/clips/**/*.mp4
 data/clips/**/*.npy
+
+# Validation artifacts (keep JSON labels, ignore heavy outputs)
+data/validation/**/*.mp4
+data/validation/**/*.png
 *.log
 .ipynb_checkpoints/
 .pytest_cache/

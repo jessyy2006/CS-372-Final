@@ -6,9 +6,11 @@ matplotlib
 scikit-learn
 
 # Vision / video
-opencv-python
+opencv-python; python_version < "3.13"
 decord
 pillow
+imageio
+imageio-ffmpeg
 
 # Models
 transformers
@@ -16,7 +18,7 @@ ultralytics          # YOLOv8
 
 # Cube logic
 pycuber
-kociemba
+kociemba; python_version < "3.13"
 
 # UI
 streamlit
